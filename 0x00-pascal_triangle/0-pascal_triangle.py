@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+0. Pascal's Triangle
+"""
+
 
 def pascal_triangle(n):
     """
@@ -22,4 +26,4 @@ def pascal_triangle(n):
         return triangle
     except ValueError as e:
         print(e)
-        return []
+        return
