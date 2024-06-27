@@ -12,10 +12,8 @@ def pascal_triangle(n):
     Returns:
         list: A list of lists representing Pascal's Triangle.
     """
-    try:
-        if not isinstance(n, int) or n <= 0:
-            raise ValueError("The number of rows must be a positive integer. Please retry with a positive number.")
 
+    if  n > 0:
         triangle = [[1]]
         for i in range(1, n):
             row = [1]
@@ -24,6 +22,3 @@ def pascal_triangle(n):
             row.append(1)
             triangle.append(row)
         return triangle
-    except ValueError as e:
-        print(e)
-        return
