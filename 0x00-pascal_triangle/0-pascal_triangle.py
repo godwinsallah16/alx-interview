@@ -12,7 +12,6 @@ def pascal_triangle(n):
     Returns:
         list: A list of lists representing Pascal's Triangle.
     """
-
     if  n > 0:
         triangle = [[1]]
         for i in range(1, n):
@@ -22,3 +21,6 @@ def pascal_triangle(n):
             row.append(1)
             triangle.append(row)
         return triangle
+    else:
+        return []
+
